@@ -3,7 +3,7 @@
 
 # Summary
 
-Housing quality is a complex issue to analyze as it is difficult to gauge whether data is accurate or collected at all. With many legislative packages coming aimed to help infrastructure, I was interested in looking at what variables could determine housing quality within a numeric value to be able to analzye. Specifically, I wanted to see if the neighborhoods one lived in had any affect on whether they were more likely to rent a home that was not-lead compliant, and not making mortgage payments. Further, this project examines whether there is an association between demographic variables and rental housing quality in Buffalo, New York.
+Housing quality is a complex issue to analyze as it is difficult to gauge whether data is accurate or even if it's collected at all. With many legislative packages coming aimed to help infrastructure, I was interested in looking at what variables could determine housing quality within a numeric value to be able to analzye. Specifically, I wanted to see if the neighborhoods one lived in had any affect on whether they were more likely to rent a home that was not-lead compliant, and not making mortgage payments. Further, this project examines whether there is an association between demographic variables and rental housing quality in Buffalo, New York.
 
 # Input Data
 
