@@ -77,37 +77,7 @@ import requests
 I then created the "registry" variable to read the CSV file that is needed in this script, **Rental_Registry.csv**. I then created the variable "leadcomp" to group the variables within "Rental_Registry.csv" file of '[Neighborhood]', '[Lead Compliance]'.
 
 The code below creates the figure 'rental.png'
-![import geopandas as gpd
-import pandas as pd
-import numpy as np 
-import matplotlib.pyplot as plt
-import seaborn as sns
-
-plt.rcParams['figure.dpi'] = 300
-sns.set_theme(style="white")
-
-registry = ![import geopandas as gpd
-import pandas as pd
-import numpy as np 
-import matplotlib.pyplot as plt
-import seaborn as sns
-
-plt.rcParams['figure.dpi'] = 300
-sns.set_theme(style="white")
-
-registry = pd.read_csv('Rental_Registry.csv', dtype=str)
-leadcomp = registry.groupby(['Neighborhood', 'Lead Compliance']).size()
-leadcomp = leadcomp.unstack('Lead Compliance')
-print(leadcomp)
-
-
-fig, ax1 = plt.subplots()
-sns.scatterplot(data=leadcomp,x="Y", y="N")
-ax1.set_title("Buffalo Neighborhood Lead Compliance")
-ax1.set_xlabel("# of Non-Lead Compliant Rental Units")
-ax1.set_ylabel("# of Lead Compliant Rental Units")
-fig.tight_layout()
-fig.savefig('rental.png')](image.png)
+![rental.png](image.png)
 
 Then, I decided I wanted to break down the "leadcomp" variable into percentages of homes that are lead compliant and those that are not. By doing this, I was able to create a figure that shows the percentage of total rental units in Buffalo in each neighborhood, that are not lead compliant
 ![Neighborhoods.png](image.png).
