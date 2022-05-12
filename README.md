@@ -73,6 +73,9 @@ sns.set_theme(style="white")
 
 registry = ![rental.png](image.png)
 
+Then, I decided I wanted to break down the "leadcomp" variable into percentages of homes that are lead compliant and those that are not. By doing this, I was able to create a figure that shows the percentage of total rental units in Buffalo in each neighborhood, that are not lead compliant
+![Neighborhoods](image.png)
+
 
 
 
