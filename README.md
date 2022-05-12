@@ -74,11 +74,18 @@ sns.set_theme(style="white")
 registry = ![rental.png](image.png)
 
 Then, I decided I wanted to break down the "leadcomp" variable into percentages of homes that are lead compliant and those that are not. By doing this, I was able to create a figure that shows the percentage of total rental units in Buffalo in each neighborhood, that are not lead compliant
-![Neighborhoods](image.png)
+![Neighborhoods.png](image.png).
+
+From there, I was interested in looking at the "Milestone" variable found in the "Rental_Registry.csv" file that showed the status of a landlords payment history. After 30 days from their last warning, the landlord's information is posted as being delinquent. This is important to track and see if there are more bad landlord's in one neighborhood and why that might be. 
+
+In order to do this, I created "delinquency" why grouped the variables 'Neighborhood', and 'Milestone' by size from the "Rental_Registry.csv" file. I unstacked it on the 'Milestone' variable and was able to compute a bar plot figure. 
+
+![Delinquency.png](image.png)
 
 
+The fourth figure I have is looking further at the Top 5 Neighborhoods with late mortgage payments and percentage of non lead compliant homes.  I created a by_milstone variable to group the thirtyday_pct by its variable of "Neighborhood". I then sorted it by the top 5 highest percentage neighborhoods with rental units with late mortgage payments. 
 
+!['Top 10 Neighborhoods in Buffalo.png'](image.png)
 
- 
 # Main Finding
 
