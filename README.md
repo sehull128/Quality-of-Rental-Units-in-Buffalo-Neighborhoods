@@ -36,7 +36,7 @@ The first script to run is: **Census Tract and Demographics.py**.
 
 A. Downloading files 
 
-Using the "read" call, we will read the zip file and csv file by their Geoid numbers, as a why to identify them. It is important to note tha the geoid numerical values match up and are both tract groups. From there, I merged the variable 'censustract' that contains the "read" file, with the 'demographic' variable, which also contains the "read" file for its respective csv. This is a 1:1, outer join on the "Geoid tract code". 
+Using the "read" call, we will read the zip file and csv file by their Geoid numbers, as a way to identify them. It is important to note that the geoid numerical values match up and are both tract groups. From there, I merged the variable 'censustract' that contains the "read" file, with the 'demographic' variable, which also contains the "read" file for its respective csv. This is a 1:1, outer join on the "Geoid tract code". 
 
 B. Using the API Census, I was able to create a new variable named "variables". "Variables" is a join key for the data set in Buffalo for Race split into White or Black. 
 Note: variables = {'B02003_003E':'HC01_VC54.Estimate..RACE...One.race...White',
@@ -69,12 +69,14 @@ the race variable that we just created (Race_by_county.csv), so that I can get d
 The second script to run is: **Buffalo_figures.py**
 
 A. Downloading files
+
 import geopandas as gpd
 import pandas as pd
 import numpy as np 
 import requests
 
-I then created the "registry" variable to read the CSV file that is needed in this script, **Rental_Registry.csv**. I then created the variable "leadcomp" to group the variables within "Rental_Registry.csv" file of '[Neighborhood]', '[Lead Compliance]'.
+
+I then created the "registry" variable to read the CSV file that is needed in this script, **Rental_Registry.csv**. This contains all of the registered rental units by a landlord that is not living in the unit. From there, I created the variable "leadcomp" to group the variables within "Rental_Registry.csv" file of '[Neighborhood]', '[Lead Compliance]'. I wanted to see the association between the two variables. 
 
 The code below creates the figure 'rental.png'
 ![rental.png](image.png)
@@ -84,7 +86,7 @@ Then, I decided I wanted to break down the "leadcomp" variable into percentages 
 
 From there, I was interested in looking at the "Milestone" variable found in the "Rental_Registry.csv" file that showed the status of a landlords payment history. After 30 days from their last warning, the landlord's information is posted as being delinquent. This is important to track and see if there are more bad landlord's in one neighborhood and why that might be. 
 
-In order to do this, I created "delinquency" why grouped the variables 'Neighborhood', and 'Milestone' by size from the "Rental_Registry.csv" file. I unstacked it on the 'Milestone' variable and was able to compute a bar plot figure. 
+In order to do this, I created "delinquency", and grouped the variables 'Neighborhood', and 'Milestone' by size from the "Rental_Registry.csv" file. I unstacked it on the 'Milestone' variable and was able to compute a bar plot figure. 
 
 ![Delinquency.png](image.png)
 
