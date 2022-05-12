@@ -101,7 +101,7 @@ In order to do this, I created "delinquency" why grouped the variables 'Neighbor
 The fourth figure I have is looking further at the Top 5 Neighborhoods with late mortgage payments and percentage of non lead compliant homes.  I created a by_milstone variable to group the thirtyday_pct by its variable of "Neighborhood". I had to use an .astype(float) function here as it was a series before and the calculation was not working. I then sorted it by the top 5 highest percentage neighborhoods with rental units with late mortgage payments. 
 
 
-![Top 10 Neighborhoods in Buffalo.png](image.png)
+!['Top 10 Neighborhoods in Buffalo.png'](image.png)
 
 # Main Findings
 The main findings in this analysis were that due to the change in map from 2020 to the new census tract model, the difference in years from 2017 to 2020 skewed the data. In order to combat this, I performed an API call that was able to retrieve the demographic data from 2020 as well. 
