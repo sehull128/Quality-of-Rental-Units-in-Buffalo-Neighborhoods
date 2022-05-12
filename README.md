@@ -16,7 +16,7 @@ The **Rental_Registry.csv"** file was used to read and query two specific neighb
 
 There are seven deliverables within this project:
 
-Three scripts -  **Census Tract and Demographics.py* and, **Buffalo_figures.py** and **Race_by_County.py**
+Three scripts -  **Census Tract and Demographics.py** and, **Buffalo_figures.py** and **Race_by_County.py**
 
 Four figures attached as png files - **Top 10 Neighborhoods in Buffalo.png** and **rental.png**, and **Neighborhoods.png** and, **Delinquency.png**
 
