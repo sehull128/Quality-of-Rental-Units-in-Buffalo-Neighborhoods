@@ -71,20 +71,7 @@ import seaborn as sns
 plt.rcParams['figure.dpi'] = 300
 sns.set_theme(style="white")
 
-registry = pd.read_csv('Rental_Registry.csv', dtype=str)
-leadcomp = registry.groupby(['Neighborhood', 'Lead Compliance']).size()
-leadcomp = leadcomp.unstack('Lead Compliance')
-print(leadcomp)
-
-
-fig, ax1 = plt.subplots()
-sns.scatterplot(data=leadcomp,x="Y", y="N")
-ax1.set_title("Buffalo Neighborhood Lead Compliance")
-ax1.set_xlabel("# of Non-Lead Compliant Rental Units")
-ax1.set_ylabel("# of Lead Compliant Rental Units")
-fig.tight_layout()
-fig.savefig('rental.png')](image.png)
-
+registry = ![rental.png](image.png)
 
 
 
